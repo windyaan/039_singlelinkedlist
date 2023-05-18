@@ -125,3 +125,6 @@ void searchData() {
 			}
 			currentNode = currentNode->next;
 		}
+		cout << "Data tidak ditemukan" << endl;
+	}
+}
