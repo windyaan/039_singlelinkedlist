@@ -141,13 +141,13 @@ int main() {
 			cout << "3. Tampilkan Data" << endl;
 			cout << "4. Cari Data" << endl;
 			cout << "5. Keluar" << endl;
-			cout << "pilihan: ";
+			cout << "Pilihan: ";
 			cin >> pilihan;
 			switch (pilihan)
 			{
 			case 1:
 				addNode();
-				cout << "Data Baerhasil Ditambahkan" << endl;
+				cout << "Data Berhasil Ditambahkan" << endl;
 				system("pause");
 				system("cls");
 				break;
@@ -176,9 +176,18 @@ int main() {
 				break;
 			case 4:
 				searchData();
+				break;
 			case 5:
 				break;
 			default:
 				cout << "Pilihan tidak ada" << endl;
 				break;
 			}
+		}
+		catch (exception e)
+		{
+			cout << "Terjadi kesalahan" << endl;
+		}
+
+	} while (pilihan != 5);
+}
